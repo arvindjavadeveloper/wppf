@@ -9,6 +9,48 @@
 </h:head>
 
 <h:body>
-
+	<!-- <p:growl autoUpdate="true"/> -->
+	
+	<p:layout fullPage="true">
+ 
+    <p:layoutUnit position="north" resizable="true" collapsible="true" effect="drop">
+        Header Part
+    </p:layoutUnit>
+ 
+    <p:layoutUnit position="south" resizable="true" closable="true" collapsible="true" effect="drop">
+        Footer part
+    </p:layoutUnit>
+    <p:layoutUnit position="west" resizable="true" closable="true" collapsible="true" effect="drop" collapsed="true">
+	    <h:form>
+	        <p:panelMenu style="width:190px">
+		        <p:submenu label="Menu 1">
+		            <p:menuitem value="Menuitem 11"/>
+		            <p:menuitem value="Menuitem 12"/>
+		        </p:submenu>
+		        <p:submenu label="Menu 2">
+		            <p:menuitem value="Menuitem 21"/>
+		        </p:submenu>
+		        <p:separator />
+		        <p:submenu label="Menu 3" >
+		            <p:submenu label="Submenu 31">
+		                <p:submenu label="Submenu 311">
+		                    <p:menuitem value="menuitem 3111"/>
+		                    <p:menuitem value="menuitem 3112"/>
+		                    <p:menuitem value="menuitem 3113"/>
+		                    <p:menuitem value="menuitem 3114"/>
+		                </p:submenu>
+		            </p:submenu>
+		            <p:menuitem value="Submenu 32"/>
+		        </p:submenu>
+		    </p:panelMenu>
+		    </h:form>
+    </p:layoutUnit>
+    <p:layoutUnit position="east" resizable="true" closable="true" collapsible="true" effect="drop">
+       Sidear  Sidear Sidear
+    </p:layoutUnit>
+    <p:layoutUnit position="center">
+    </p:layoutUnit>
+ 
+</p:layout>
 </h:body>
 </html>
