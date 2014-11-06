@@ -12,6 +12,7 @@
 </h:head>
 
 <h:body>
+<h:form >
 	<!-- <p:growl autoUpdate="true"/> -->
 	<p:layout fullPage="true">
 		<p:layoutUnit position="north" resizable="true" collapsible="true"
@@ -24,11 +25,11 @@
     </p:layoutUnit>
 		<p:layoutUnit position="west" resizable="true" closable="true"
 			collapsible="true" effect="drop">
-			<h:form>
+			
 				<p:panelMenu style="width:190px">
 					<p:submenu label="Menu 1">
-						<p:menuitem value="Menuitem 11" actionListener="#{buttonView.buttonAction}" ajax="true"/>
-						<p:menuitem value="Menuitem 12" />
+						<p:menuitem value="Menuitem 11" actionListener="#{buttonView.buttonAction}" ajax="false"/>
+						<p:menuitem value="Menuitem 12" action="welcome"/>
 					</p:submenu>
 					<p:submenu label="Menu 2">
 						<p:menuitem value="Menuitem 21" />
@@ -46,7 +47,7 @@
 						<p:menuitem value="Submenu 32" />
 					</p:submenu>
 				</p:panelMenu>
-			</h:form>
+			
 		</p:layoutUnit>
 		<p:layoutUnit position="east" resizable="true" closable="true"
 			collapsible="true" effect="drop">
@@ -58,5 +59,6 @@
 			</p:tabView>
 		</p:layoutUnit>
 	</p:layout>
+	</h:form>
 </h:body>
 </html>
